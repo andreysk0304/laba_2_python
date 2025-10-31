@@ -1,7 +1,7 @@
 import shlex
 
 
-def tokenizer(command: str) -> list[str]:
+def tokenizer(command: str | None) -> list[str]:
     '''
     Разбивает команду на токены.
 
@@ -9,6 +9,8 @@ def tokenizer(command: str) -> list[str]:
     :return: Список токенов в команде.
     '''
 
-    tokens = shlex.split(command)[1:]
+    if not command:
+        return []
 
+    tokens = shlex.split(command)
     return tokens

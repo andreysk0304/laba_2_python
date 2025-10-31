@@ -1,0 +1,576 @@
+{
+    "updated_at": "2025-10-31 18:14:23.335039",
+    "operations": [
+        {
+            "operation": "cd users"
+        },
+        {
+            "operation": "ls"
+        },
+        {
+            "operation": "ls"
+        },
+        {
+            "operation": "cd andre/pycharmprojects"
+        },
+        {
+            "operation": "ld"
+        },
+        {
+            "operation": "ls"
+        },
+        {
+            "operation": "cd laba_2_python"
+        },
+        {
+            "operation": "cat .history"
+        },
+        {
+            "operation": "ls"
+        },
+        {
+            "operation": "cd src"
+        },
+        {
+            "operation": "ls"
+        },
+        {
+            "operation": "cat .history"
+        },
+        {
+            "operation": "help"
+        },
+        {
+            "timestamp": "2025-10-29 17:37:17.169972",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-29 17:37:25.825418",
+            "operation": "cd users/andre/pycharmprojects"
+        },
+        {
+            "timestamp": "2025-10-29 17:37:26.585567",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-29 17:37:32.778679",
+            "operation": "cd laba_2_python"
+        },
+        {
+            "timestamp": "2025-10-29 17:37:34.068941",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-29 17:37:36.817166",
+            "operation": "cd src"
+        },
+        {
+            "timestamp": "2025-10-29 17:37:40.713560",
+            "operation": "cat .history"
+        },
+        {
+            "timestamp": "2025-10-29 17:41:54.294815",
+            "operation": "history"
+        },
+        {
+            "timestamp": "2025-10-29 17:42:05.632653",
+            "operation": "history"
+        },
+        {
+            "timestamp": "2025-10-29 17:42:07.207569",
+            "operation": "jbfdjfd"
+        },
+        {
+            "timestamp": "2025-10-29 17:42:08.001036",
+            "operation": "hjfdjbkhfdb"
+        },
+        {
+            "timestamp": "2025-10-29 17:42:08.871003",
+            "operation": "dhbfhdbkf"
+        },
+        {
+            "timestamp": "2025-10-29 17:42:12.216849",
+            "operation": "nooob"
+        },
+        {
+            "timestamp": "2025-10-29 17:42:23.003654",
+            "operation": "while True: print(hello)"
+        },
+        {
+            "timestamp": "2025-10-29 17:42:26.332812",
+            "operation": "history"
+        },
+        {
+            "timestamp": "2025-10-29 17:42:31.872536",
+            "operation": "history 5"
+        },
+        {
+            "timestamp": "2025-10-29 17:42:35.062295",
+            "operation": "history 1"
+        },
+        {
+            "timestamp": "2025-10-29 17:42:59.806794",
+            "operation": "history 1"
+        },
+        {
+            "timestamp": "2025-10-29 17:43:03.808947",
+            "operation": "huistry 100"
+        },
+        {
+            "timestamp": "2025-10-29 17:43:06.717012",
+            "operation": "history 100"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:12.696605",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:15.398626",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:16.212157",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:16.793194",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:17.341009",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:17.792350",
+            "operation": "sls"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:18.633277",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:19.137998",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:19.717174",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:20.667482",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:21.119961",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:21.582178",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:21.989664",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:22.301165",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:22.581199",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:01:22.867871",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:02:16.770087",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:02:23.320120",
+            "operation": "help"
+        },
+        {
+            "timestamp": "2025-10-31 12:03:05.483778",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:03:24.630329",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:04:02.220128",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:04:03.960618",
+            "operation": "ls -l"
+        },
+        {
+            "timestamp": "2025-10-31 12:05:41.352951",
+            "operation": "cd usera/andre"
+        },
+        {
+            "timestamp": "2025-10-31 12:05:48.531562",
+            "operation": "cd users/andre"
+        },
+        {
+            "timestamp": "2025-10-31 12:05:49.259065",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:06:00.066274",
+            "operation": "cp Result_5.csv"
+        },
+        {
+            "timestamp": "2025-10-31 12:07:04.750310",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:07:10.011569",
+            "operation": "cd users"
+        },
+        {
+            "timestamp": "2025-10-31 12:07:11.550145",
+            "operation": "cd ~"
+        },
+        {
+            "timestamp": "2025-10-31 12:07:18.700807",
+            "operation": "cd ~"
+        },
+        {
+            "timestamp": "2025-10-31 12:07:21.204468",
+            "operation": "cd"
+        },
+        {
+            "timestamp": "2025-10-31 12:07:24.645378",
+            "operation": "cd ~"
+        },
+        {
+            "timestamp": "2025-10-31 12:07:29.746150",
+            "operation": "clear"
+        },
+        {
+            "timestamp": "2025-10-31 12:07:30.588385",
+            "operation": "cd"
+        },
+        {
+            "timestamp": "2025-10-31 12:07:35.458987",
+            "operation": "cd ."
+        },
+        {
+            "timestamp": "2025-10-31 12:07:38.203284",
+            "operation": "cd users"
+        },
+        {
+            "timestamp": "2025-10-31 12:07:39.019162",
+            "operation": "cd ."
+        },
+        {
+            "timestamp": "2025-10-31 12:07:41.967948",
+            "operation": "cd .."
+        },
+        {
+            "timestamp": "2025-10-31 12:07:50.212380",
+            "operation": "cd users/~"
+        },
+        {
+            "timestamp": "2025-10-31 12:07:52.719263",
+            "operation": "cd users"
+        },
+        {
+            "timestamp": "2025-10-31 12:08:04.660135",
+            "operation": "cd users/andre"
+        },
+        {
+            "timestamp": "2025-10-31 12:08:11.886708",
+            "operation": "cp Result_5.csv ."
+        },
+        {
+            "timestamp": "2025-10-31 12:08:13.895365",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:08:19.999854",
+            "operation": "undo"
+        },
+        {
+            "timestamp": "2025-10-31 12:08:21.450752",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 12:08:50.575432",
+            "operation": "zip Result_5.csv \"какая то шляпа 223.zip\""
+        },
+        {
+            "timestamp": "2025-10-31 17:40:27.353021",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 17:40:30.744957",
+            "operation": "cd users"
+        },
+        {
+            "timestamp": "2025-10-31 17:40:31.716293",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 17:40:33.481083",
+            "operation": "cd andre"
+        },
+        {
+            "timestamp": "2025-10-31 17:40:33.965034",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 17:40:45.096474",
+            "operation": "zip Result_5.csv test.zip"
+        },
+        {
+            "timestamp": "2025-10-31 17:40:52.030473",
+            "operation": ""
+        },
+        {
+            "timestamp": "2025-10-31 17:41:38.094030",
+            "operation": ""
+        },
+        {
+            "timestamp": "2025-10-31 17:41:38.226126",
+            "operation": ""
+        },
+        {
+            "timestamp": "2025-10-31 17:41:38.338805",
+            "operation": ""
+        },
+        {
+            "timestamp": "2025-10-31 17:41:40.545325",
+            "operation": ""
+        },
+        {
+            "timestamp": "2025-10-31 17:41:40.797856",
+            "operation": ""
+        },
+        {
+            "timestamp": "2025-10-31 17:42:02.119369",
+            "operation": ""
+        },
+        {
+            "timestamp": "2025-10-31 17:42:02.252925",
+            "operation": ""
+        },
+        {
+            "timestamp": "2025-10-31 17:42:02.370283",
+            "operation": ""
+        },
+        {
+            "timestamp": "2025-10-31 17:42:02.489525",
+            "operation": ""
+        },
+        {
+            "timestamp": "2025-10-31 17:42:10.491271",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 17:42:13.884879",
+            "operation": "cd users/andre"
+        },
+        {
+            "timestamp": "2025-10-31 17:42:14.914318",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 17:42:26.970011",
+            "operation": "zip test.zip Result_5.csv"
+        },
+        {
+            "timestamp": "2025-10-31 17:42:47.195075",
+            "operation": "help"
+        },
+        {
+            "timestamp": "2025-10-31 17:43:38.539048",
+            "operation": "cd pycharmprojects"
+        },
+        {
+            "timestamp": "2025-10-31 17:43:46.642341",
+            "operation": "cd laba_2_python"
+        },
+        {
+            "timestamp": "2025-10-31 17:43:48.330626",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 17:43:55.330849",
+            "operation": "cd tests"
+        },
+        {
+            "timestamp": "2025-10-31 17:43:58.678617",
+            "operation": "cd ."
+        },
+        {
+            "timestamp": "2025-10-31 17:44:03.366413",
+            "operation": "cd ~"
+        },
+        {
+            "timestamp": "2025-10-31 17:44:16.289851",
+            "operation": "pycharmprojects/laba_2_python"
+        },
+        {
+            "timestamp": "2025-10-31 17:44:23.483573",
+            "operation": "cd pycharmprojects"
+        },
+        {
+            "timestamp": "2025-10-31 17:44:31.121580",
+            "operation": "cd laba_2_python"
+        },
+        {
+            "timestamp": "2025-10-31 17:44:38.984635",
+            "operation": "cd test"
+        },
+        {
+            "timestamp": "2025-10-31 17:44:42.927241",
+            "operation": "cd tests"
+        },
+        {
+            "timestamp": "2025-10-31 17:44:53.904841",
+            "operation": "zip fdfdnbfd zip.zip"
+        },
+        {
+            "timestamp": "2025-10-31 17:45:41.871714",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 17:46:58.765569",
+            "operation": "cd users/andre/pycharmprojects"
+        },
+        {
+            "timestamp": "2025-10-31 17:47:03.107021",
+            "operation": "cd laba_2_python"
+        },
+        {
+            "timestamp": "2025-10-31 17:47:04.434656",
+            "operation": "cd tests"
+        },
+        {
+            "timestamp": "2025-10-31 17:47:06.440598",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 17:47:28.683033",
+            "operation": "zip fdfdnbfd fdfdnbfd.zip"
+        },
+        {
+            "timestamp": "2025-10-31 17:47:34.488614",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 17:47:47.598089",
+            "operation": "unzip fdfdnbfd.zip fdfdnbfd"
+        },
+        {
+            "timestamp": "2025-10-31 17:47:59.531388",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 17:48:40.540071",
+            "operation": "zip fdfdnbfd myarchive.zip"
+        },
+        {
+            "timestamp": "2025-10-31 17:48:50.765578",
+            "operation": "unzip myarchive.zip ."
+        },
+        {
+            "timestamp": "2025-10-31 17:58:45.731033",
+            "operation": "cd users/andre"
+        },
+        {
+            "timestamp": "2025-10-31 17:58:49.840097",
+            "operation": "cd pycharmprojects"
+        },
+        {
+            "timestamp": "2025-10-31 17:58:53.940481",
+            "operation": "cd laba_2_python"
+        },
+        {
+            "timestamp": "2025-10-31 17:58:54.668972",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 17:59:06.525067",
+            "operation": "help"
+        },
+        {
+            "timestamp": "2025-10-31 17:59:21.494164",
+            "operation": "cd users/andre"
+        },
+        {
+            "timestamp": "2025-10-31 17:59:25.152053",
+            "operation": "cd pycharmprojects"
+        },
+        {
+            "timestamp": "2025-10-31 17:59:30.439598",
+            "operation": "cd laba_2_python"
+        },
+        {
+            "timestamp": "2025-10-31 17:59:31.287952",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 17:59:36.029551",
+            "operation": "cd tests"
+        },
+        {
+            "timestamp": "2025-10-31 17:59:37.523358",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 17:59:42.617087",
+            "operation": "cd .."
+        },
+        {
+            "timestamp": "2025-10-31 17:59:58.556111",
+            "operation": "grep tests hi"
+        },
+        {
+            "timestamp": "2025-10-31 18:00:07.999316",
+            "operation": "help"
+        },
+        {
+            "timestamp": "2025-10-31 18:00:19.078425",
+            "operation": "grep hi tests"
+        },
+        {
+            "timestamp": "2025-10-31 18:00:24.627795",
+            "operation": "grep hi tests -r"
+        },
+        {
+            "timestamp": "2025-10-31 18:01:47.280479",
+            "operation": "cd users/andre"
+        },
+        {
+            "timestamp": "2025-10-31 18:01:47.912757",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 18:01:58.569143",
+            "operation": "cd pycharmprojects"
+        },
+        {
+            "timestamp": "2025-10-31 18:01:59.880736",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 18:02:12.306866",
+            "operation": "grep hi laba_2_python -r"
+        },
+        {
+            "timestamp": "2025-10-31 18:14:20.310765",
+            "operation": "history"
+        },
+        {
+            "timestamp": "2025-10-31 18:14:23.335039",
+            "operation": "history 1000"
+        }
+    ]
+}
