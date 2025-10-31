@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 @register_command('rm', 'Команда rm <path> удаляет указанный файл.')
-def rm_func(command: Command) -> None:
+def rm_func(command: Command, is_test: bool = False) -> None:
     '''
     Функция удаляет файл/директорию <path> (по факту перемещает в .trash)
 
@@ -23,7 +23,7 @@ def rm_func(command: Command) -> None:
     if '-r' in command.flags:
         recursive = True
 
-    if not command.paths:
+    if len(command.paths) != 1:
         raise InvalidArgumentsCount(command.command)
 
     target = Shell.resolve_path(command.paths[0])
@@ -43,7 +43,11 @@ def rm_func(command: Command) -> None:
         raise CannotRemoveNotFound(f'{path}')
 
     try:
-        check: str = input('You are agree ? [y/n\n')
+        if not is_test:
+            check: str = input('You are agree ? [y/n\n')
+
+        else:
+            check: str = 'y'
 
         if check.strip().lower() == 'y':
             Shell.move_file_directory_to_trash(target, recursive)

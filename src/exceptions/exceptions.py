@@ -26,12 +26,17 @@ class NotEnoughPermissions(Exception):
 class IsNotTextFile(Exception):
     def __init__(self):
         super().__init__(f"Это не текстовый файл.")
-        
+
         
 class CatalogNotFound(Exception):
     def __init__(self, path: str):
         super().__init__(f"Каталог '{path}' не существует.")
-        
+
+
+class DirectoryNotFound(Exception):
+    def __init__(self, path: str):
+        super().__init__(f"Директория '{path}' не существует.")
+
         
 class CodeError(Exception):
     def __init__(self, error: str):

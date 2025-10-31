@@ -18,7 +18,7 @@ def grep_func(command: Command) -> None:
     :return: Вхождения файл, номер строки, строка
     '''
 
-    if len(command.paths) < 2:
+    if len(command.paths) != 2:
         raise InvalidArgumentsCount(command.command)
 
     pattern, path = command.paths[0], command.paths[1]
@@ -48,7 +48,7 @@ def grep_func(command: Command) -> None:
 
     for file in files:
         try:
-            with open(file, 'r', encoding='utf-8', errors='ignore') as f:
+            with open(file, 'r',encoding='utf-8', errors='ignore') as f:
                 matches = []
                 for i, line in enumerate(f, 1):
                     if regex.search(line):
@@ -61,9 +61,10 @@ def grep_func(command: Command) -> None:
     if not file_matches:
         raise NoMatchesFound(pattern)
 
+    msg: str = ''
     for file, matches in file_matches.items():
-        console_logger.info(f'___ {file} ___')
+        msg += f'___ {file} ___'
         for line_num, line_text in matches:
-            console_logger.info(f'{line_num}. {line_text}')
+            msg += f'{line_num}. {line_text}\n'
 
-        console_logger.info('')
+        console_logger.info(msg + '\n')

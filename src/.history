@@ -1,5 +1,5 @@
 {
-    "updated_at": "2025-10-31 20:52:32.811514",
+    "updated_at": "2025-10-31 22:03:36.711306",
     "operations": [
         {
             "operation": "cd users"
@@ -659,6 +659,78 @@
         {
             "timestamp": "2025-10-31 20:52:32.811514",
             "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 21:18:40.119692",
+            "operation": "cd users/andre/pycharmproject"
+        },
+        {
+            "timestamp": "2025-10-31 21:18:43.331326",
+            "operation": "cd users/andre"
+        },
+        {
+            "timestamp": "2025-10-31 21:18:47.971672",
+            "operation": "cd pycharmprojects"
+        },
+        {
+            "timestamp": "2025-10-31 21:18:48.994743",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 21:18:56.278892",
+            "operation": "cd laba_2_pythob"
+        },
+        {
+            "timestamp": "2025-10-31 21:19:00.351891",
+            "operation": "cd laba_2_python"
+        },
+        {
+            "timestamp": "2025-10-31 21:19:02.682206",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 21:19:10.121215",
+            "operation": "ls requirements.txt"
+        },
+        {
+            "timestamp": "2025-10-31 21:23:11.387373",
+            "operation": "cd users/andre"
+        },
+        {
+            "timestamp": "2025-10-31 21:23:20.633381",
+            "operation": "cd pycharmprojects"
+        },
+        {
+            "timestamp": "2025-10-31 21:23:24.793552",
+            "operation": "cd laba_2_python"
+        },
+        {
+            "timestamp": "2025-10-31 21:23:26.158945",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 21:23:33.275479",
+            "operation": "ls requirements.txt"
+        },
+        {
+            "timestamp": "2025-10-31 21:29:37.077468",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 21:31:14.046604",
+            "operation": "ls -l"
+        },
+        {
+            "timestamp": "2025-10-31 22:03:30.412853",
+            "operation": "cd .."
+        },
+        {
+            "timestamp": "2025-10-31 22:03:34.302646",
+            "operation": "cd users"
+        },
+        {
+            "timestamp": "2025-10-31 22:03:36.711306",
+            "operation": "cd .."
         }
     ]
 }

@@ -1,7 +1,7 @@
 import logging
 import os
 
-from src.exceptions.exceptions import InvalidArgumentsCount, CatalogNotFound
+from src.exceptions.exceptions import InvalidArgumentsCount, CatalogNotFound, IsDirectory
 
 from src.components.shell import Shell
 from src.components.command import Command
