@@ -1,5 +1,5 @@
 {
-    "updated_at": "2025-10-31 18:14:23.335039",
+    "updated_at": "2025-10-31 20:52:32.811514",
     "operations": [
         {
             "operation": "cd users"
@@ -571,6 +571,94 @@
         {
             "timestamp": "2025-10-31 18:14:23.335039",
             "operation": "history 1000"
+        },
+        {
+            "timestamp": "2025-10-31 20:01:02.903091",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 20:01:09.292173",
+            "operation": "hello"
+        },
+        {
+            "timestamp": "2025-10-31 20:01:31.727461",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 20:01:34.409123",
+            "operation": "hello"
+        },
+        {
+            "timestamp": "2025-10-31 20:01:37.629656",
+            "operation": "gh ghf "
+        },
+        {
+            "timestamp": "2025-10-31 20:01:59.057862",
+            "operation": "hfdbjfd"
+        },
+        {
+            "timestamp": "2025-10-31 20:02:16.779434",
+            "operation": "fjbdf"
+        },
+        {
+            "timestamp": "2025-10-31 20:03:05.243924",
+            "operation": "fdfd"
+        },
+        {
+            "timestamp": "2025-10-31 20:05:10.588356",
+            "operation": "влатаьв"
+        },
+        {
+            "timestamp": "2025-10-31 20:05:21.154245",
+            "operation": "cd users/andre"
+        },
+        {
+            "timestamp": "2025-10-31 20:49:56.330658",
+            "operation": "help"
+        },
+        {
+            "timestamp": "2025-10-31 20:49:59.209679",
+            "operation": "clear"
+        },
+        {
+            "timestamp": "2025-10-31 20:50:04.434205",
+            "operation": "cd users"
+        },
+        {
+            "timestamp": "2025-10-31 20:50:05.414577",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 20:50:06.711771",
+            "operation": "ls -l"
+        },
+        {
+            "timestamp": "2025-10-31 20:52:06.425371",
+            "operation": "ls fdknfdk"
+        },
+        {
+            "timestamp": "2025-10-31 20:52:10.105473",
+            "operation": "ls "
+        },
+        {
+            "timestamp": "2025-10-31 20:52:14.844657",
+            "operation": "cd Все пользователи"
+        },
+        {
+            "timestamp": "2025-10-31 20:52:22.238669",
+            "operation": "cd 'Все пользователи'"
+        },
+        {
+            "timestamp": "2025-10-31 20:52:25.193029",
+            "operation": "ls"
+        },
+        {
+            "timestamp": "2025-10-31 20:52:27.596442",
+            "operation": "cd"
+        },
+        {
+            "timestamp": "2025-10-31 20:52:32.811514",
+            "operation": "ls"
         }
     ]
 }

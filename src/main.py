@@ -1,27 +1,16 @@
-import logging
-
 from sys import stdin
 
 from src.commands import *
+
+from src.utils.loggers import full_logger, console_logger, file_logger
 
 from src.components.shell import Shell
 from src.components.command import Command
 
 from src.decorators.register_command import HANDLERS
-from src.utils.messages import log_print
-
-logging.basicConfig(
-    filename='shell.log',
-    filemode='a',
-    level=logging.INFO,
-    format='[ %(asctime)s ] %(levelname)s: %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S',
-    encoding='utf-8'
-)
-
 
 def use_command(input_command: str) -> None:
-    logging.info(f'{input_command}')
+    file_logger.info(f'{input_command}')
     Shell.add_history_log(command=input_command)
 
     input_command: str = input_command.strip()
@@ -36,21 +25,21 @@ def use_command(input_command: str) -> None:
             try:
                 handler(command)
             except Exception as error:
-                log_print(message=f'{error}')
+                full_logger.error(f'{error}')
 
             return
 
-    log_print(f'command {input_command} not found')
+    full_logger.error(f"Команда '{command.command}' не найдена :(")
 
 
 def main() -> None:
-    print('Добро пожаловать в кастомный shell "Андрюшка", чтобы отключить его необходимо ввести "exit" или "break"\n\nВведите "help", чтобы увидеть все доступные команды.')
+    console_logger.info('Добро пожаловать в кастомный shell "Андрюшка", чтобы отключить его необходимо ввести "exit" или "break"\n\nВведите "help", чтобы увидеть все доступные команды.')
 
     while stdin:
         command: str = input(f'{Shell.current_path}>')
 
         if command.strip() in ('exit', 'break'):
-            print('Пока пока, до новых встреч :3')
+            console_logger.info('Пока пока, до новых встреч :3')
 
             break
 

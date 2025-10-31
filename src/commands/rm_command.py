@@ -1,5 +1,5 @@
-from src.utils.messages import log_print
-from src.utils.tokenizer import tokenizer
+from src.exceptions.exceptions import InvalidArgumentsCount, CannotRemove, CannotRemoveNotFound, CodeError
+from src.utils.loggers import console_logger
 
 from src.decorators.register_command import register_command
 
@@ -11,46 +11,48 @@ from pathlib import Path
 
 @register_command('rm', 'Команда rm <path> удаляет указанный файл.')
 def rm_func(command: Command) -> None:
+    '''
+    Функция удаляет файл/директорию <path> (по факту перемещает в .trash)
+
+    :param command: Команда из консоли
+    :return: Ничего
+    '''
+
     recursive: bool = False # Включено ли рекурсивное удаление
 
     if '-r' in command.flags:
         recursive = True
 
     if not command.paths:
-        log_print(message='does not have path params.')
-
-        return
+        raise InvalidArgumentsCount(command.command)
 
     target = Shell.resolve_path(command.paths[0])
 
     path = Path(target)
 
     if path.resolve() == Path('/').resolve():
-        log_print(message="cannot remove root directory '/'")
-        return
+        raise CannotRemove('/')
 
     if path.resolve() == Path('..').resolve() or path.name == '..':
-        log_print(message="cannot remove parent directory '..'")
-        return
+        raise CannotRemove('..')
 
     if path.resolve() == Path('.').resolve() or path.name == '.':
-        log_print(message="cannot remove current directory '.'")
-        return
+        raise CannotRemove('.')
 
     if not path.exists():
-        log_print(message=f"cannot remove '{path}', no such file or directory.")
-        return
+        raise CannotRemoveNotFound(f'{path}')
 
     try:
         check: str = input('You are agree ? [y/n\n')
 
         if check.strip().lower() == 'y':
             Shell.move_file_directory_to_trash(target, recursive)
-            print(f"you remove: '{path}'")
+            console_logger.info(f"'{path}' успешно удалён!")
             return
 
         else:
+            console_logger.info(f'{path} удаление прервано!')
             return
 
     except Exception as error:
-        log_print(f'{error}')
+        raise CodeError(f'{error}')

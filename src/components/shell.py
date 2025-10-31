@@ -114,6 +114,12 @@ class ShellClass:
 
 
     def add_history_log(self, command: str) -> None:
+        '''
+        Функция добавляет запись для команды history в файл .history
+
+        :param command: Введённая команда
+        :return: Ничего
+        '''
 
         data = self.get_history_json()
 
@@ -245,6 +251,14 @@ class ShellClass:
             pass
 
     def copy_file_or_directory(self, from_path: str, to_path: str) -> None:
+        '''
+        Функция создаёт копию директории или файла в to_path файла from_path
+
+        :param from_path: Копируемый файл
+        :param to_path: Куда копируем файл
+        :return: Ничего
+        '''
+
         from_path = Path(self.resolve_path(from_path))
         to_path = Path(self.resolve_path(to_path))
 
@@ -264,6 +278,14 @@ class ShellClass:
 
 
     def move_file_or_directory(self, from_path: str, to_path: str) -> None:
+        '''
+        Функция перемещает файл или директорию из from_path в to_path
+
+        :param from_path: Перетаскиваемый файл
+        :param to_path: Куда перемещаем файл
+        :return: Ничего
+        '''
+
         from_path = Path(self.resolve_path(from_path))
         to_path = Path(self.resolve_path(to_path))
 
@@ -276,7 +298,12 @@ class ShellClass:
         return
 
 
-    def move_file_or_directory_back(self):
+    def move_file_or_directory_back(self) -> None:
+        '''
+        Функция возвращает файл или директорию в исходную директорию (используется в команде undo)
+        :return: Ничего
+        '''
+
         data = self.get_last_operation()
 
         self.move_file_or_directory(to_path=data['old_path'], from_path=data['new_path'])
@@ -286,11 +313,11 @@ class ShellClass:
         return
 
 
-    def remove_copied_file_or_directory(self):
+    def remove_copied_file_or_directory(self) -> None:
         '''
         Удаляет созданную копию файла.
 
-        :return: ничег.
+        :return: Ничего
         '''
 
         data = self.get_last_operation()

@@ -5,15 +5,21 @@ from src.decorators.register_command import register_command
 
 from src.components.command import Command
 from src.components.shell import Shell
-
-from src.utils.messages import log_print
+from src.exceptions.exceptions import InvalidArgumentsCount, InvalidRePattern, PathNotFound, NoMatchesFound
+from src.utils.loggers import console_logger
 
 
 @register_command('grep', 'Поиск строк по шаблону в файлах. Использование: grep [-r] [-i] <pattern> <path>')
 def grep_func(command: Command) -> None:
+    '''
+    Функция ищет в указанной директории вхождения подстрок в файлы
+
+    :param command: Команда из консоли
+    :return: Вхождения файл, номер строки, строка
+    '''
+
     if len(command.paths) < 2:
-        log_print('Usage: grep [-r] [-i] <pattern> <path>')
-        return
+        raise InvalidArgumentsCount(command.command)
 
     pattern, path = command.paths[0], command.paths[1]
     resolved_path = Shell.resolve_path(path)
@@ -21,11 +27,11 @@ def grep_func(command: Command) -> None:
     try:
         regex = re.compile(pattern, re.IGNORECASE if '-i' in command.flags else 0)
     except:
-        log_print('Invalid pattern')
-        return
+        raise InvalidRePattern(pattern)
 
     # Поиск файлов
     files = []
+
     if os.path.isfile(resolved_path):
         files = [resolved_path]
     elif os.path.isdir(resolved_path):
@@ -35,8 +41,7 @@ def grep_func(command: Command) -> None:
         else:
             files = [os.path.join(resolved_path, file) for file in os.listdir(resolved_path) if os.path.isfile(os.path.join(resolved_path, file))]
     else:
-        log_print('Path not found')
-        return
+        raise PathNotFound(path)
 
     # Все вхождения по файлам
     file_matches = {}
@@ -54,12 +59,11 @@ def grep_func(command: Command) -> None:
             continue
 
     if not file_matches:
-        log_print('No matches found')
-        return
+        raise NoMatchesFound(pattern)
 
     for file, matches in file_matches.items():
-        print(f'___ {file} ___')
+        console_logger.info(f'___ {file} ___')
         for line_num, line_text in matches:
-            print(f'{line_num}. {line_text}')
+            console_logger.info(f'{line_num}. {line_text}')
 
-        print('')
+        console_logger.info('')

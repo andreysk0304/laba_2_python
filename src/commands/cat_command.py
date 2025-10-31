@@ -1,9 +1,8 @@
-import logging
 import os
 from pathlib import Path
 
-from src.utils.messages import log_print
-from src.utils.tokenizer import tokenizer
+from src.exceptions.exceptions import InvalidArgumentsCount, FileNotFound, IsDirectory, NotEnoughPermissions, IsNotTextFile
+from src.utils.loggers import console_logger
 
 from src.components.shell import Shell
 from src.components.command import Command
@@ -20,34 +19,30 @@ def cat_func(command: Command) -> None:
     '''
 
     if len(command.paths) > 1:
-        log_print('to many params.')
-
-        return
+        raise InvalidArgumentsCount(command.command)
 
     filename = command.paths[0]
 
     file_path = Shell.resolve_path(filename)
 
     if not os.path.exists(file_path):
-        log_print(f"file '{file_path}' not found.")
-        return
+        raise FileNotFound(file_path)
 
     if os.path.isdir(file_path):
-        log_print(f"Error: '{file_path}', '{filename}' - is catalog.")
-        return
+        raise IsDirectory(file_path)
 
     try:
-        print(f'filename: {filename}\n{"-" * 50}')
+        console_logger.info(f'filename: {filename}\n{"-" * 50}')
 
         path = Path(file_path)
 
         try:
-            print(path.read_text(encoding="utf-8"))
+            console_logger.info(path.read_text(encoding="utf-8"))
         except UnicodeDecodeError:
-            print(path.read_text(encoding='iso-8859-1'))
+            console_logger.info(path.read_text(encoding='iso-8859-1'))
 
 
     except PermissionError:
-        log_print(f"You not have permissions for '{file_path}'")
+        raise NotEnoughPermissions()
     except UnicodeDecodeError:
-        log_print(f"'{file_path}' is not text file.")
+        raise IsNotTextFile()
