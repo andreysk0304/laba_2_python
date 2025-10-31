@@ -12,13 +12,13 @@ def test_cd_func(fs: FakeFilesystem):
     fs.create_dir('test')
 
     cd_func(Command("cd test"))
-    assert Shell.current_path == 'C:\\test'
+    assert Shell.current_path == '\\test'
 
     cd_func(Command("cd ."))
-    assert Shell.current_path == 'C:\\test'
+    assert Shell.current_path == '\\test'
 
     cd_func(Command("cd .."))
-    assert Shell.current_path == 'C:\\'
+    assert Shell.current_path == '\\'
 
     cd_func(Command("cd"))
     assert Shell.current_path == 'C:\\'

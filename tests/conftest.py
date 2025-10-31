@@ -1,7 +1,11 @@
 import pytest
 
 from unittest.mock import Mock
+
+from pyfakefs.fake_filesystem import FakeFilesystem
 from pytest_mock import MockerFixture
+
+from src.components.shell import Shell
 
 
 @pytest.fixture
@@ -17,8 +21,7 @@ def fake_full_logger(mocker: MockerFixture) -> Mock:
 
     return mock_full_logger
 
-'''
-@pytest.fixture
-def fake_project_dir(monkeypatch):
-    monkeypatch.setattr(src., "UNDO_HISTORY_FILE", "/.undo_history.jsonl")
-'''
+
+@pytest.fixture(autouse=True)
+def change_dir(fs: FakeFilesystem):
+    Shell.current_path = '/'
